@@ -1,0 +1,112 @@
+.nav__container{
+    display:flex;
+    flex-direction: column;
+    flex:3;
+    border-right: 1px solid var(--border-color);
+    height:100vh;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+
+    .nav__top-side{
+        padding:0 1.5rem;
+        display:flex;
+        flex-direction: column;
+    
+        .new__chat-nav{
+            background-color: var(--primary-color);
+            width:95%;
+            font-size: 1.5rem;
+            font-weight :400;
+            text-align:center;
+            padding:var(--nav-padding);
+            border-radius :0.4rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:.5rem;
+            
+        }
+
+    }
+
+    .nav__ul__section{
+        border-top:1px solid var(--border-color);
+        height:30%;
+        width:100%;
+
+        ul{
+            padding:1.5rem 2.3rem;
+
+            li{
+                padding:1.2rem 0 0 0;
+                font-weight:400;
+                font-size: 1.2rem;
+                color:var(--text-lighter);
+                cursor:pointer;
+                display:flex;
+                align-items:center;
+                gap:.5rem;
+
+                .listIconDark{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+.modes{
+    display:flex;
+    gap:1rem;
+    justify-content: start;
+    width:fit-content;
+    // margin-top:rem;
+    margin:0 auto;
+    .white-mode{
+    background-color: var(--bg-light-mode);
+    height:1.7rem;
+    width:1.7rem;
+    border-radius:.2rem;
+    cursor:pointer;
+   border:1px solid var(--bg-dark-mode);
+    }
+    .dark-mode{
+    background-color: rgb(0, 0, 0);
+    height:1.7rem;
+    width:1.7rem;
+    border-radius:.2rem;
+    cursor:pointer;
+    }
+}
+.nav__button{
+    position:fixed;
+    top:40px;
+    right:40px;
+    width:2.5rem;
+    height:2.5rem;
+    // background-color: #fff;
+    z-index:4000;
+    cursor: pointer;
+    
+    img{
+        width:100%;
+    }
+}
+.nav__flex-adjust{
+    // flex:0;
+    position:absolute;
+    width:30rem;
+    z-index:1000;
+    background-color: var(--bg-dark-mode);
+}
+.nav__flex-readjust{
+    position:absolute;
+    width:0;
+}
+@media (max-width:990px) {
+    .nav__container{
+        flex:4.5;
+    }
+}

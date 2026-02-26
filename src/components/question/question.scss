@@ -1,0 +1,21 @@
+.nav__question{
+    background-color: transparent;
+            width:95%;
+            font-size: 1.2rem;
+            font-weight:300;
+            text-align:center;
+            padding:.8rem 1.5rem;
+            border-radius :0.3rem;
+            border:.5px solid var(--border-color);
+            margin-top: .5rem;
+            color:var(--text-lighter);
+            cursor:pointer;
+            display:flex;
+            align-items:center;
+            padding:var(--nav-padding);
+            gap:1rem;
+
+            .questionIcon{
+                font-size:1.5rem;
+            }
+}

@@ -1,0 +1,17 @@
+.logo{
+    display:flex;
+    gap:1.5rem;
+    margin:2rem 0;
+    text-align: start;
+    justify-content: flex-start;
+    align-items: center;
+    
+    img{
+        width:15%;
+    }
+    h2{
+        // width:85%;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
